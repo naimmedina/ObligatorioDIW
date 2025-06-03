@@ -1,0 +1,341 @@
+/* FUENTE ProceDown */
+
+@font-face {
+    font-family: 'ProceDown';
+    src: url('../fuentes/Pricedown Bl.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-family: 'ProceDown';
+    font-size: 30px;
+    padding: 15px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* header, section, footer {
+    
+} */
+
+
+/* HEADER */
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    font-family: 'ProceDown';
+    font-size: 17px;
+    color: #783F6C;
+    text-decoration: none;
+}
+
+header img {
+    width: 60px;
+    margin: 5px;
+}
+
+/* MAIN
+Primera Section - PORTADA */
+
+.portada {
+    background-image: url('../img/portada.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.portada div{
+    margin: 0;
+}
+
+.portada div h1 {
+    font-size: 50px;
+}
+
+.portada div p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.portada div a {
+    font-family: 'ProceDown';
+    font-size: 30px;
+    padding: 4px;
+    border-radius: 3px;
+    color: white;
+    background-color: #C085B4;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.portada div a:hover {
+    background-color: #a96b98;
+}
+
+/* SEGUNDA SECTION - CARACTERISTICAS*/
+
+#caracteristicas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#contenedorCaracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.caracteristicasLaterales {
+    padding: 30px;
+} 
+
+.caracteristicasLaterales img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+#caracteristicasImgCentro img{
+    height: 800px;
+    width: 700px;
+    margin: 0 40px 30px 0; 
+}
+
+/* TERCERA SECTION - GALERIA */
+#galeria{
+    text-align: center;
+    background-color: #211C35;
+    color: white;
+}
+
+#galeria div{
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#primeraFila{
+    display: grid;
+    grid-template-columns: 25% 25% auto;
+    gap: 10px;
+}
+
+#segundaFila{
+    display: grid;
+    grid-template-columns: auto 25% 25%;
+    gap: 10px;
+}
+
+#galeria img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: right center;
+}
+
+/* CUARTA SECTION - RESERVA*/
+
+#reserva {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#reserva p {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+#contenedorReserva {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+/* FORMULARIO DE RESERVA */
+
+form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input, textarea, select {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ADA7CB;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+select {
+    display: block;
+    width: 300px;
+    height: 40px;
+}
+
+label {
+    display: block;
+    text-align: start;
+    font-weight: bold;
+}
+
+#contenedorModeloCantidad{
+    display: flex;
+    gap: 0 30px;
+}
+
+input[type="submit"]{
+    font-family: 'ProceDown';
+    font-size: 30px;
+    width: 200px;
+    height: auto;
+    color: white;
+    background-color: #C085B4;
+}
+
+input[type="submit"]:hover{
+    background-color: #502B49;
+}
+
+#contenedorCheckLabel {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#contenedorCheckLabel input[type="checkbox"] {
+    width: auto;
+    margin-right: 15px;
+}
+
+#contenedorCheckLabel label {
+    display: inline;
+    text-align: left;
+}
+
+/* TABLE DE MODELOS */
+
+table {
+    width: 650px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+thead{
+    background-color: #ADA7CB;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid #ADA7CB;
+}
+
+.thDescription {
+    font-weight: normal;
+}
+
+/* QUINTA SECTION - OTROS PRODUCTOS */
+
+#productos{
+    text-align: center;
+    background-color: #6C3761;
+    color: white ;
+}
+
+#containerCardProduct {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#productos article{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+}
+
+#productos img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: right center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#productos article a {
+    font-family: 'ProceDown';
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #211C35;
+    color: white ;
+    
+}
+
+/* FIN MAIN
+   FOOTER
+*/
+
+footer{
+    background-color: #231F33;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+#contenedorRedesSociales{
+    display: flex;
+    flex-direction: row;
+}
+
+footer img {
+    width: 25px;
+    margin: 0 5px;
+}
