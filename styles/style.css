@@ -53,7 +53,7 @@ header img {
 Primera Section - PORTADA */
 
 .portada {
-    background-image: url('/img/portada.png');
+    background-image: url('/img/Portada.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
